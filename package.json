@@ -1,0 +1,25 @@
+{
+  "name": "calendar-api",
+  "description": "Microservicio que devuelve los eventos de tecnología del mes actual y el siguiente",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "eslint '**/*.js'",
+    "start": "micro",
+    "start-dev": "NODE_ENV=development micro -p ${PORT:-4000}"
+  },
+  "author": "durancristhian@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "color-hash": "^1.0.3",
+    "dotenv": "^4.0.0",
+    "micro": "^7.0.6",
+    "micro-cors": "^0.0.1",
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.15.0",
+    "husky": "^0.13.2"
+  }
+}
