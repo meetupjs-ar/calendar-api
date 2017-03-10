@@ -1,7 +1,6 @@
 # calendar-api
 
-Microservicio que devuelve los eventos de tecnología del mes actual y el siguiente
-Usa [spreadsheet-api](https://spreadsheet-api.now.sh/) y [meetup-api](https://meetup-api.now.sh/)
+Microservicio que devuelve los eventos de tecnología del mes actual y el siguiente. Usa [spreadsheet-api](https://spreadsheet-api.now.sh/) y [meetup-api](https://meetup-api.now.sh/)
 
 ## Live
 
