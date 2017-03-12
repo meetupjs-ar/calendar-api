@@ -1,6 +1,6 @@
 # calendar-api
 
-Microservicio que devuelve los próximos eventos de tecnología agrupados por mes y ordenados por fecha. Usa [spreadsheet-api](https://github.com/meetupjs-ar/google-spreadsheet-api) y [meetup-api](https://github.com/meetupjs-ar/meetup-api)
+Microservicio que devuelve los próximos eventos de tecnología agrupados por mes y ordenados por fecha. Usa [spreadsheet-api](https://github.com/meetupjs-ar/google-spreadsheet-api), [meetup-api](https://github.com/meetupjs-ar/meetup-api) y [eventbrite-api](https://github.com/meetupjs-ar/eventbrite-api)
 
 ## Live
 

@@ -20,8 +20,9 @@ async function handler (req, res) {
     try {
         // we fetch the data from the endpoints
         const promises = [
-            makeRequest(process.env.SPREADSHEET_API),
-            makeRequest(process.env.MEETUP_API)
+            makeRequest(process.env.EVENTBRITE_API),
+            makeRequest(process.env.MEETUP_API),
+            makeRequest(process.env.SPREADSHEET_API)
         ]
         // we store an array of arrays where each one correspond to each endpoint
         const allData = await Promise.all(promises)
