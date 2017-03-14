@@ -1,5 +1,5 @@
-// if we're in development, we require an specific configuration located at '.env'
-// at production, that configuration is setted directly and we don't use that file
+// si estamos en desarrollo, requerimos el archivo '.env'
+// en producción, esa configuración se recibe directamente como variables de entorno
 if (process.env.NODE_ENV === 'development') {
     require('dotenv').config()
 }
@@ -18,17 +18,17 @@ moment.locale('es')
 
 async function handler (req, res) {
     try {
-        // we fetch the data from the endpoints
+        // creamos un array de promises con los request de los eventos a cada API
         const promises = [
             makeRequest(process.env.EVENTBRITE_API),
             makeRequest(process.env.MEETUP_API),
             makeRequest(process.env.SPREADSHEET_API)
         ]
-        // we store an array of arrays where each one correspond to each endpoint
+        // allData será un array de arrays, donde cada posición tendrá los eventos de cada API
         const allData = await Promise.all(promises)
-        // we flatten 'allData' to have a 'one-level' array
+        // generamos un array de 1 solo nivel con todos los eventos de las 3 APIs combinadas
         const rawData = [].concat(...allData)
-        // we filter and format everything
+        // generamos el output
         const data = formatData(rawData)
 
         send(res, 200, data)

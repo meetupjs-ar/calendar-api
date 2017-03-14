@@ -1,6 +1,5 @@
 {
   "name": "calendar-api",
-  "description": "Microservicio que devuelve los eventos de tecnología del mes actual y el siguiente",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
