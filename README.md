@@ -1,6 +1,6 @@
 # calendar-api
 
-Microservicio que devuelve los eventos de tecnología en Buenos Aires de los próximos 6 meses
+Microservicio que devuelve los eventos de tecnología en Buenos Aires
 
 [calendar-api](http://calendar-api.now.sh/)
 
