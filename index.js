@@ -7,14 +7,11 @@ if (process.env.NODE_ENV === 'development') {
 const formatData = require('./lib/format-data')
 const makeRequest = require('./lib/make-request')
 const microCors = require('micro-cors')
-const moment = require('moment')
 const { send } = require('micro')
 
 const cors = microCors({
     allowMethods: ['GET']
 })
-
-moment.locale('es')
 
 async function handler (req, res) {
     try {
