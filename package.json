@@ -13,6 +13,7 @@
   "dependencies": {
     "color-hash": "^1.0.3",
     "dotenv": "^4.0.0",
+    "got": "^6.7.1",
     "micro": "^7.0.6",
     "micro-cors": "^0.0.1",
     "moment": "^2.17.1",
