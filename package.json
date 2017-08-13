@@ -1,27 +1,26 @@
 {
-  "name": "calendar-api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "NODE_ENV=development micro -p ${PORT:-4000}",
-    "precommit": "eslint '**/*.js'",
-    "start": "micro",
-    "start-dev": "nodemon --exec npm run dev"
-  },
-  "author": "durancristhian@gmail.com",
-  "license": "MIT",
-  "dependencies": {
-    "color-hash": "^1.0.3",
-    "dotenv": "^4.0.0",
-    "got": "^6.7.1",
-    "micro": "^7.0.6",
-    "micro-cors": "^0.0.1",
-    "moment": "^2.17.1",
-    "nodemon": "^1.11.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
-    "husky": "^0.13.2"
-  }
+    "name": "calendar-api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "NODE_ENV=development micro-dev -p ${PORT:-4000}",
+        "precommit": "eslint '**/*.js'",
+        "start": "micro"
+    },
+    "author": "durancristhian@gmail.com",
+    "license": "MIT",
+    "dependencies": {
+        "color-hash": "^1.0.3",
+        "dotenv": "^4.0.0",
+        "got": "^6.7.1",
+        "micro": "^8.0.2",
+        "micro-cors": "^0.0.1",
+        "moment": "^2.17.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^7.1.1",
+        "eslint": "^3.15.0",
+        "husky": "^0.13.2",
+        "micro-dev": "^1.2.0"
+    }
 }

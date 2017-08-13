@@ -15,7 +15,7 @@ Microservicio que devuelve los eventos de tecnología en Buenos Aires
 ```bash
 # npm install
 yarn install
-npm run start-dev
+npm run dev
 ```
 
 ## Licencia

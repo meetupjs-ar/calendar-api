@@ -13,7 +13,7 @@ const cors = microCors({
     allowMethods: ['GET']
 })
 
-async function handler (req, res) {
+async function handler(req, res) {
     try {
         // creamos un array de promises con los request de los eventos a cada API
         const promises = [
