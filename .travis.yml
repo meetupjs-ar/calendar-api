@@ -16,5 +16,5 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - npm run clean-deploys
   - npm run scale
+  - npm run clean-deploys
