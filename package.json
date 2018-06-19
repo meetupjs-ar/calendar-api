@@ -7,7 +7,7 @@
         "deploy": "now alias $(now --name $INSTANCE_NAME -e EVENTBRITE_API=$EVENTBRITE_API -e MEETUP_API=$MEETUP_API -e NODE_ENV=production -e SPREADSHEET_API=$SPREADSHEET_API --npm --token $NOW_TOKEN) $INSTANCE_NAME --token=$NOW_TOKEN",
         "dev": "micro-dev -p ${PORT:-4000}",
         "precommit": "eslint '**/*.js'",
-        "scale": "now scale $INSTANCE_NAME'.now.sh' 1 --token $NOW_TOKEN",
+        "scale": "now scale $INSTANCE_NAME'.now.sh' sfo --token $NOW_TOKEN",
         "start": "micro"
     },
     "author": "durancristhian@gmail.com",
