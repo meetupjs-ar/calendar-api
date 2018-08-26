@@ -1,6 +1,6 @@
 # calendar-api
 
-[![Build Status](https://travis-ci.org/meetupjs-ar/calendar-api.svg?branch=master)](https://travis-ci.org/meetupjs-ar/calendar-api)
+[![Build Status](https://travis-ci.org/meetupjs-ar/calendar-api.svg?branch=master)](https://travis-ci.org/meetupjs-ar/calendar-api) [![Greenkeeper badge](https://badges.greenkeeper.io/meetupjs-ar/calendar-api.svg)](https://greenkeeper.io/)
 
 Microservicio que devuelve los eventos de tecnología en Buenos Aires
 
