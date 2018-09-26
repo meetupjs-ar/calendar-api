@@ -23,7 +23,7 @@
     "devDependencies": {
         "babel-eslint": "^8.2.3",
         "eslint": "^5.4.0",
-        "husky": "^0.14.3",
+        "husky": "^1.0.0",
         "micro-dev": "^3.0.0"
     }
 }
