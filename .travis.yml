@@ -1,20 +1,18 @@
 sudo: false
 language: node_js
 cache:
-  directories:
-    - node_modules
+    directories:
+        - node_modules
 notifications:
-  email: false
-script:
-  - npm run precommit
+    email: false
 before_deploy:
-  - npm i now --no-save
-  - npm run clean-deploys
+    - npm i now --no-save
+    - npm run clean-deploys
 deploy:
-  provider: script
-  script: npm run deploy
-  skip_cleanup: true
-  on:
-    branch: master
+    provider: script
+    script: npm run deploy
+    skip_cleanup: true
+    on:
+        branch: master
 after_deploy:
-  - npm run scale
+    - npm run scale

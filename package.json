@@ -1,33 +1,33 @@
 {
-  "name": "calendar-api",
-  "version": "1.0.1",
-  "main": "index.js",
-  "scripts": {
-    "clean-deploys": "now rm $INSTANCE_NAME --token $NOW_TOKEN --yes",
-    "deploy": "now alias $(now --name $INSTANCE_NAME -e EVENTBRITE_API=$EVENTBRITE_API -e MEETUP_API=$MEETUP_API -e SPREADSHEET_API=$SPREADSHEET_API --npm --token $NOW_TOKEN) $INSTANCE_NAME --token=$NOW_TOKEN",
-    "dev": "micro-dev -p ${PORT:-4000}",
-    "scale": "now scale $INSTANCE_NAME.now.sh 1 --token $NOW_TOKEN",
-    "start": "micro"
-  },
-  "author": "durancristhian@gmail.com",
-  "license": "MIT",
-  "dependencies": {
-    "color-hash": "^1.0.3",
-    "dotenv": "^6.0.0",
-    "got": "^9.2.2",
-    "micro": "^9.3.3",
-    "micro-cors": "^0.1.1",
-    "moment": "^2.22.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.6.1",
-    "husky": "^1.1.1",
-    "micro-dev": "^3.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint '**/*.js'"
+    "name": "calendar-api",
+    "version": "1.0.1",
+    "main": "index.js",
+    "scripts": {
+        "clean-deploys": "now rm $INSTANCE_NAME --token $NOW_TOKEN --yes",
+        "deploy": "now alias $(now --name $INSTANCE_NAME -e EVENTBRITE_API=$EVENTBRITE_API -e MEETUP_API=$MEETUP_API -e SPREADSHEET_API=$SPREADSHEET_API --npm --token $NOW_TOKEN) $INSTANCE_NAME --token=$NOW_TOKEN",
+        "dev": "micro-dev -p ${PORT:-4000}",
+        "scale": "now scale $INSTANCE_NAME.now.sh 1 --token $NOW_TOKEN",
+        "start": "micro"
+    },
+    "author": "durancristhian@gmail.com",
+    "license": "MIT",
+    "dependencies": {
+        "color-hash": "^1.0.3",
+        "dotenv": "^6.0.0",
+        "got": "^9.2.2",
+        "micro": "^9.3.3",
+        "micro-cors": "^0.1.1",
+        "moment": "^2.22.2"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.6.1",
+        "husky": "^1.1.1",
+        "micro-dev": "^3.0.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "eslint '**/*.js'"
+        }
     }
-  }
 }
