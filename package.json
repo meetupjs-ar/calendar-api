@@ -16,7 +16,7 @@
         "dotenv": "^6.0.0",
         "got": "^9.2.2",
         "micro": "^9.3.3",
-        "micro-cors": "^1.0.0",
+        "micro-cors": "^0.1.1",
         "moment": "^2.22.2"
     },
     "devDependencies": {
