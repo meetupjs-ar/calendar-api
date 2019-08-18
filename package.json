@@ -13,7 +13,7 @@
     "license": "MIT",
     "dependencies": {
         "color-hash": "^1.0.3",
-        "dotenv": "^8.0.0",
+        "dotenv": "^8.1.0",
         "got": "^9.6.0",
         "micro": "^9.3.4",
         "micro-cors": "^0.1.1",
