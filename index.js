@@ -18,7 +18,7 @@ async function handler(req, res) {
         // creamos un array de promises con los request de los eventos a cada API
         const promises = [
             makeRequest(process.env.EVENTBRITE_API),
-            makeRequest(process.env.MEETUP_API),
+            /* makeRequest(process.env.MEETUP_API), */
             makeRequest(process.env.SPREADSHEET_API)
         ]
         // allData será un array de arrays, donde cada posición tendrá los eventos de cada API
