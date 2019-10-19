@@ -8,17 +8,21 @@ const formatData = require('./lib/format-data')
 const makeRequest = require('./lib/make-request')
 const microCors = require('micro-cors')
 const { send } = require('micro')
+const url = require('url')
 
 const cors = microCors({
     allowMethods: ['GET']
 })
 
 async function handler(req, res) {
-    try {
+    try {        
+        const date = url.parse(req.url, true).query.date
         // creamos un array de promises con los request de los eventos a cada API
         const promises = [
             makeRequest(process.env.EVENTBRITE_API),
-            /* makeRequest(process.env.MEETUP_API), */
+            makeRequest(
+                `${process.env.MEETUP_API}${date ? '?date='+date : ''}`
+            ),
             makeRequest(process.env.SPREADSHEET_API)
         ]
         // allData será un array de arrays, donde cada posición tendrá los eventos de cada API
